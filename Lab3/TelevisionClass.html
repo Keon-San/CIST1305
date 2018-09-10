@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			//Program Name: TelevisionClass.html
+			//Purpose: Create and test Television Class
+			//Author: Keon Sanavandi
+			//Date last modified: 10-September-2018
+			
+			function Television(mName, screenS, cost) {
+				this.manufacturer = mName;
+				this.screenSize = screenS;
+				this.price = cost;
+			}
+		</script>
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+			var BR = "<br />"
+			
+			var myTV = new Television("Sony", 52, 1299.00);
+			document.write("Manufacturer is " + myTV.manufacturer + "." + BR);
+			document.write("Screen size is " + myTV.screenSize + "." + BR);
+			document.write("Price is " + myTV.price.toFixed(2) + "." + BR);
+			document.write("Thank you for using this program." + BR);
+		</script>
+	</body>
+</html>

@@ -1,7 +1,7 @@
-//Program Name: Televison Class
-//Purpose: Defines television class
+//Program Name: Televison Class 2
+//Purpose: Defines television class and tests it
 //Author: Keon Sanavandi
-//Date last Modified: 10-September-2017
+//Date last Modified: 10-September-2018
 
 //Declare class
 Class Televison
