@@ -28,4 +28,13 @@ Class Televison
         	Display "Manufacturer is: " + manufacturer + ". Screen Size is: " + screenSize + " inches. Price is: $" + price + "."
       End Method
 End Class
+
+
+
+Start
+	Television testTV = new Television("Sony", 52, 1299.00)
+	testTV.displayInfo()
+	testTV.setPrice(999.00)
+	testTV.displayInfo()
+Stop
 	
