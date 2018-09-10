@@ -1,0 +1,30 @@
+//Program Name: Televison Class
+//Purpose: Defines television class
+//Author: Keon Sanavandi
+//Date last Modified: 10-September-2017
+
+//Declare class
+Class Televison
+      
+      //Declare class variables
+      String manufacturer
+      Numberic screenSize
+      Numeric price
+      
+      //Constructor
+      Constructor Method Television(String mName, Numeric screenS, Numeric cost)
+            manufacturer = mName
+            screenSize = screenS
+            price = cost
+      End Method
+      
+      //Set Price
+      Method setPrice(Numeric newPrice)
+            price = newPrice
+      End Method
+      
+      //Display Info
+      Method displayInfo()
+            Display "Manufacturer is: " + manufacturer + " Screen Size is: " + screenSize + " Price is: " + price + "."
+      End Method
+End Class
