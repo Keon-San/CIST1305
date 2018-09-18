@@ -1,0 +1,45 @@
+<html>
+  <body>
+    <script type="text/javascript">
+      //Program Name: Buzz Buttons
+      //Purpose: Get user info about order and calculate price
+      //Author: Keon Sanavandi
+      //Date Last Modified: 18-September-2018
+      
+      //Declare variables
+      var name;
+      var email;
+      var numOfButtons;
+      var buttonCost;
+      var totalCost;
+      var salesTax;
+      
+      //Declare constants
+      var SALESTAXRATE = 0.06;
+      var SHIPPINGRATE = 2;
+      var PRICEPERBUTTON = 0.99;
+      var BR = "<br />";
+      var ES = "";
+      
+      name = prompt("Enter your full name", ES);
+      email = prompt("Enter your email", ES);
+      numOfButtons = prompt("Enter the desired number of buttons", ES):
+      numOfButtons = parseInt(numOfButtons);
+      
+      document.write("Full Name: " + name + BR);
+      document.write("Email: " + email + BR);
+      document.write("Number of buttons requested: " + numOfButtons + BR);
+      
+      buttonCost = PRICEPERBUTTON * numOfButtons;
+      document.write("Subtotal is: $" + buttonCost.toFixed(2) + BR);
+      
+      salesTax = SALESTAXRATE * buttonCost;
+      document.write("Sales tax is: $" + salesTax.toFixed(2) + BR);
+      
+      document.write("Shipping cost is: $" + SHIPPINGRATE.toFixed(2) + BR);
+      
+      totalCost = salesTax + buttonCost + SHIPPINGRATE;
+      document.write("Total cost is: $" + totalCost.toFixed(2) + BR);
+    </script>
+  </body>
+</html>
