@@ -1,0 +1,44 @@
+//Program Name: Buzz Buttons
+//Purpose: Get user info about order and calculate price
+//Author: Keon Sanavandi
+//Date Last Modified: 18-September-2018
+Start
+  //Declare variables
+  Declare String name, email
+  Declare Numeric numOfButtons
+  Declare Numeric buttonTotal
+  Declare Numeric salesTax
+  Declare Numeric totalCost
+  Declare Constant SALESTAXRATE = 0.06
+  Declare Constant SHIPPINGRATE = 2
+  Declare Constant PRICEPERBUTTON = .99
+  
+  Display "Welcome to the Buzz Buttons program."
+  
+  Display "Enter your full name: "
+  Input name
+  Display "Enter your email: "
+  Input email
+  Display "Enter # of buttons desired: "
+  Input numOfButtons
+  
+  //Display name, email, and number of buttons
+  Display "Button Name: " + name
+  Display "Email: " + email
+  Display "# of buttons requested: " + numOfButtons
+  
+  //Calculate and display button total
+  buttonTotal = PRICEPERBUTTON * numOfButtons
+  Display "Subtotal is $" + buttonTotal
+  
+  //Calcualate and display sales tax
+  salesTax = SALESTAXRATE * buttonTotal
+  Display "Sales tax is $" + salesTax
+  
+  //Display shipping cost
+  Display "Shipping cost is $" + SHIPPINGRATE
+  
+  //Calculate and display order total
+  totalCost = SHIPPINGRATE + salesTax + buttonTotal
+  Display "Total cost is $" + totalCost
+Stop
